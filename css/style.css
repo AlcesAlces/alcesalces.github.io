@@ -1,0 +1,43 @@
+
+body {
+	overflow: hidden;
+}
+
+#clouds{
+	padding: 100px 0;
+	background: #e0e0e0;
+	background: -webkit-linear-gradient(top, #e0e0e0 0%, #e0e0e0 100%);
+	background: -linear-gradient(top, #e0e0e0 0%, #e0e0e0 100%);
+	background: -moz-linear-gradient(top, #e0e0e0 0%, #e0e0e0 100%);
+}
+.cloud {
+	width: 200px; height: 60px;
+	background: #e0e0e0;
+	
+	border-radius: 200px;
+	-moz-border-radius: 200px;
+	-webkit-border-radius: 200px;
+	z-index:999;
+	position: fixed;
+}
+
+.cloud:before, .cloud:after {
+	content: '';
+	position: absolute; 
+	background: #e0e0e0;
+	width: 100px; height: 80px;
+	position: absolute; top: -15px; left: 10px;
+	
+	border-radius: 100px;
+	-moz-border-radius: 100px;
+	-webkit-border-radius: 100px;
+	
+	-webkit-transform: rotate(30deg);
+	transform: rotate(30deg);
+	-moz-transform: rotate(30deg);
+}
+
+.cloud:after {
+	width: 120px; height: 120px;
+	top: -55px; left: auto; right: 15px;
+}
